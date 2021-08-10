@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serifyy;
+  background: #C4C4C4;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.main__title {
+  display: block;
+  width: fit-content;
+  margin: 65px auto 16px 66px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+}
+.main__grid {
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr;
+  grid-template-areas: "h1 h2 h3" "h4 h5 h6";
+  grid-gap: 1rem;
+  margin: auto 66px auto;
+}
+@media screen and (max-width: 992px) {
+  .main__grid {
+    grid-auto-columns: 1fr 1fr;
+    grid-template-areas: "h1 h2" "h4 h5";
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__grid {
+    grid-auto-columns: 1fr;
+    grid-template-areas: "h1" "h4";
+  }
+}
+.main__grid .card {
+  border: 1px solid #A3A3A3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.2));
+  color: #fff;
+}
+.main__grid .card.flower {
+  background: url(../img/image-01.jpg);
+  background-size: cover;
+}
+.main__grid .card.natural {
+  background: url(../img/image-02.jpg);
+  background-size: cover;
+}
+.main__grid .card.food {
+  background: url(../img/image-03.jpg);
+  background-size: cover;
+}
+.main__grid .card.animal {
+  background: url(../img/image-04.jpg);
+  background-size: cover;
+}
+.main__grid .card.music {
+  background: url(../img/image-05.jpg);
+  background-size: cover;
+}
+.main__grid .card.sport {
+  background: url(../img/image-06.jpg);
+  background-size: cover;
+}
+.main__grid .card__title {
+  margin: 24px 0 0 24px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+.main__grid .card__description {
+  margin: 16px 24px;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: justify;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+.main__grid .card__btn {
+  border-radius: 4px;
+  display: block;
+  width: fit-content;
+  margin: 36px 24px 24px auto;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/*# sourceMappingURL=render2.css.map */

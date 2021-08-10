@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap")
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+$primaryColor: #fff
+$secondaryColor: #121212
+
+body
+	font-family: "Roboto", sans-serifyy
+	background: #C4C4C4
+
+.btn
+	text-decoration: none
+	padding: 8px 12px
+
+.main
+	&__title
+		display: block
+		width: fit-content
+		margin: 65px auto 16px 66px
+
+		font-weight: bold
+		font-size: 24px
+		line-height: 25px
+
+	&__grid
+		display: grid
+		grid-auto-columns: 1fr 1fr 1fr
+		grid-template-areas: "h1 h2 h3" "h4 h5 h6"
+		grid-gap: 1rem
+		// padding: 1rem
+		margin: auto 66px auto
+
+		@media screen and (max-width: 992px)
+			grid-auto-columns: 1fr 1fr
+			grid-template-areas: "h1 h2" "h4 h5"
+		@media screen and (max-width: 768px)
+			grid-auto-columns: 1fr
+			grid-template-areas: "h1" "h4"
+
+		.card
+			border: 1px solid #A3A3A3
+			box-sizing: border-box
+			border-radius: 10px
+
+			filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.2))
+			color: $primaryColor
+			&.flower
+				background: url(../img/image-01.jpg)
+				background-size: cover
+			&.natural
+				background: url(../img/image-02.jpg)
+				background-size: cover
+			&.food
+				background: url(../img/image-03.jpg)
+				background-size: cover
+			&.animal
+				background: url(../img/image-04.jpg)
+				background-size: cover
+			&.music
+				background: url(../img/image-05.jpg)
+				background-size: cover
+			&.sport
+				background: url(../img/image-06.jpg)
+				background-size: cover
+
+			&__title
+				margin: 24px 0 0 24px
+				font-weight: bold
+				font-size: 24px
+				line-height: 25px
+
+				text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4)
+
+			&__description
+				margin: 16px 24px
+
+				font-weight: 350
+				font-size: 16px
+				line-height: 17px
+				text-align: justify
+
+				text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4)
+
+			&__btn
+				border-radius: 4px
+				display: block
+				width: fit-content
+				margin: 36px 24px 24px auto
+
+				color: $primaryColor
+				background: rgba(0, 0, 0, 0.4)
